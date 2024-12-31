@@ -119,7 +119,7 @@ const TermsAndAttachments = ({
           className="border-[1.5px] border-[#175CFF] text-[#175CFF] rounded-[8px] px-[16px] py-[10px] font-satoshi font-bold text-[14px] w-[188px]"
         />
         <CustomButton
-          onClick={() => goToNextStep(3)}
+          onClick={() => goToNextStep && goToNextStep(3)}
           title="Continue"
           className="bg-[#175CFF] text-[#fff] rounded-[8px] px-[16px] py-[10px] font-satoshi font-bold text-[14px] w-[188px]"
         />

@@ -109,7 +109,7 @@ const RequestForQuote = ({ goToNextStep }: MultiStepHeaderComponentProps) => {
           className="border-[1.5px] border-[#175CFF] text-[#175CFF] rounded-[8px] px-[16px] py-[10px] font-satoshi font-bold text-[14px] w-[188px]"
         />
         <CustomButton
-          onClick={() => goToNextStep(2)}
+          onClick={() => goToNextStep && goToNextStep(2)}
           title="Continue"
           className="bg-[#175CFF] text-[#fff] rounded-[8px] px-[16px] py-[10px] font-satoshi font-bold text-[14px] w-[188px]"
         />
