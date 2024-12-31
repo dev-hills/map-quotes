@@ -7,7 +7,7 @@ import TermsAndAttachments from "@/components/TermsAndAttachments";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [currentStep, setCurrentStep] = useState<number>(1);
 
   const goToNextStep = (step: number) => {
@@ -54,4 +54,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

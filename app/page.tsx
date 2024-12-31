@@ -6,10 +6,10 @@ import QuoteTable from "@/components/QuoteTable";
 import ContractOutline from "@/icons/ContractOutline";
 import X from "@/icons/X";
 import { ChevronDown } from "lucide-react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
 
   return (
@@ -70,4 +70,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

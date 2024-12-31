@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import data from "../../../utils/quoteDetails.json";
 
-export async function GET(req: Request) {
+export async function GET() {
   if (data) {
     return NextResponse.json({
       status: 200,

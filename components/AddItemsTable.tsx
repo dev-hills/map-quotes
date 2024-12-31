@@ -5,9 +5,7 @@ import {
   getCoreRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import Item from "@/icons/Item";
 import InputField from "./InputField";
-import XDark from "@/icons/XDark";
 import { ChevronDown } from "lucide-react";
 import Dollar from "./Dollar";
 import CalendarOutline from "@/icons/CalendarOutline";
@@ -101,7 +99,7 @@ const AddItemsTable = () => {
     }),
     columnHelper.accessor("quantity", {
       header: "Quantity",
-      cell: (info) => (
+      cell: () => (
         <InputField
           className="py-[8px] px-[12px] rounded-[6px] border-[1px] border-[#D0D5DD] w-[140px]"
           value="100"
@@ -116,7 +114,7 @@ const AddItemsTable = () => {
     }),
     columnHelper.accessor("price", {
       header: "Price",
-      cell: (info) => (
+      cell: () => (
         <InputField
           className="py-[8px] px-[12px] rounded-[6px] border-[1px] border-[#D0D5DD] w-[140px]"
           value="12.00"
@@ -146,7 +144,7 @@ const AddItemsTable = () => {
     }),
     columnHelper.accessor("id", {
       header: "",
-      cell: ({ row }) => (
+      cell: ({}) => (
         <div className="ml-[50px]">
           <Bin />
         </div>

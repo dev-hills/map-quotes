@@ -8,7 +8,7 @@ import {
 } from "@tanstack/react-table";
 import Item from "@/icons/Item";
 
-const data: any = [
+const data: TableDataProps[] = [
   {
     id: 1,
     items: {
